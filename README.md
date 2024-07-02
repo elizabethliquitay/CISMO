@@ -18,7 +18,7 @@
  Se necesita implementar una base de datos relacional que gestione de manera mas eficaz las ventas que se realizan en la diaria los supermercados , se lograra con esta implementacion un sistema  estable en todos los ambitos , permitira que el empleado pueda gestionar un mayor control de la venta
 
 
-## Descripción de la Base de Datos - Gestión de Reservas en Restaurantes
+## Descripción de la Base de Datos 
 
 Cismo permitira gestionar la venta que se realiza en el dia los supermercados  , tendra un sistema de alta y baja de empleados  y clientes, alta y baja de tiendas , una apertura de la fecha de venta asi como tambien el tipo de factura que se realiza, la descripcion de cada una de ellas y los medios de pago por el cual se hacen los distintos tipos de transsaciones 
 
