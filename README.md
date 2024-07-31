@@ -82,4 +82,23 @@ CISMO INLCUYE
 ![image](https://github.com/elizabethliquitay/CISMO/assets/173855632/66a060a3-384c-407e-b8e6-bd9b37cc5deb)
 
 
+# SEGUNDA PARTE DE LA ENTREGA
+
+
+#### DIAGRAMA DE ENTIDAD Y RELACION  
+
+Para la insercion de registros se  hizo mediantes insert, se insertaron regitros  de forma ordenada para las siguientes tablas
+
+-tiendas : 20 regitros
+
+![image](https://github.com/user-attachments/assets/6fac7ce0-9b53-4af0-8646-241524349381)
+
+-empleado_tienda : 20 regritros
+
+![image](https://github.com/user-attachments/assets/0a00b509-5825-41d4-a11c-dec174009014)
+
+
+
+
+
 
