@@ -144,9 +144,10 @@ VALUES
 
 Vista:  mostrar_empleados_tiendas 
 
-Descripción: Esta vista muestra el informacion de los empleados y que tienen trabaja
+Descripción: Esta vista muestra la informacion de los empleados y a que tienda trabaja
 
 empleado: Contiene información general de los empleados (ID, CUIL, nombre, legajo real, estado).
+
 empleadotienda: Relaciona a los empleados con las tiendas donde trabajan (ID, legajo, ID de tienda, estado).
 
 **consulta:**
