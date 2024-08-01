@@ -159,7 +159,7 @@ FROM mostrar_empleados_tiendas
 ORDER BY 'nombre y apellido' DESC;
 ```
 
-vista:
+vista: tiendas_por_ciudad
 
 Descripcion: Esta vista muestra  las distintas ciudades que estan ubicadas CISMO y el número de tiendas que se encuentran 
 
