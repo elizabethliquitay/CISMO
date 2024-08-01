@@ -140,3 +140,18 @@ VALUES
 
 ![image](https://github.com/user-attachments/assets/a86549e4-2acb-4278-8316-940dc8417726)
 
+
+
+Vista:  mostrar_empleados_tiendas 
+
+Descripción: Esta vista muestra el informacion de los empleados y que tienen trabaja
+
+empleado: Contiene información general de los empleados (ID, CUIL, nombre, legajo real, estado).
+empleadotienda: Relaciona a los empleados con las tiendas donde trabajan (ID, legajo, ID de tienda, estado).
+
+**consulta:**
+
+```sql
+SELECT * FROM mostrar_empleados_tiendas 
+ORDER BY 'nombre y apellido' DESC;
+```
