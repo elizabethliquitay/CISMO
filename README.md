@@ -159,11 +159,15 @@ FROM mostrar_empleados_tiendas
 ORDER BY 'nombre y apellido' DESC;
 ```
 
-vista: tiendas_por_ciudad
+Vista: tiendas_por_ciudad
 
 Descripcion: Esta vista muestra  las distintas ciudades que estan ubicadas CISMO y el número de tiendas que se encuentran 
 
 tienda: contiene informacion de las tiendas que se encuentran en distindas provincias
+
+
+**consulta:**
+
 
 ```sql
 SELECT 
@@ -171,3 +175,24 @@ SELECT
 FROM tiendas_por_ciudad ;
 
 ```
+
+Vista: factura_completa
+
+Descripcion:  Unifica la información de la cabecera y el detalle de cada factura, proporcionando una visión completa de cada transacción.
+
+
+facturacioncab: Contiene la información general de cada factura (fecha, tipo de comprobante, caja, legajo, etc.).
+facturaciondet: Contiene los detalles de cada ítem de una factura (descripción, importe).
+
+**consulta:**
+
+
+```sql
+
+SELECT 
+* 
+FROM factura_completa;d ;
+
+```
+
+
