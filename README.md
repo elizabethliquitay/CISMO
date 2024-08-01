@@ -153,6 +153,21 @@ empleadotienda: Relaciona a los empleados con las tiendas donde trabajan (ID, le
 **consulta:**
 
 ```sql
-SELECT * FROM mostrar_empleados_tiendas 
+SELECT 
+* 
+FROM mostrar_empleados_tiendas 
 ORDER BY 'nombre y apellido' DESC;
+```
+
+vista:
+
+Descripcion: Esta vista muestra  las distintas ciudades que estan ubicadas CISMO y el número de tiendas que se encuentran 
+
+tienda: contiene informacion de las tiendas que se encuentran en distindas provincias
+
+```sql
+SELECT 
+* 
+FROM tiendas_por_ciudad ;
+
 ```
