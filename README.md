@@ -85,20 +85,50 @@ CISMO INLCUYE
 # SEGUNDA PARTE DE LA ENTREGA
 
 
-#### DIAGRAMA DE ENTIDAD Y RELACION  
+#### ISERCION DE TABLAS
 
 Para la insercion de registros se  hizo mediantes insert, se insertaron regitros  de forma ordenada para las siguientes tablas
 
 -tiendas : 20 regitros
+ INSERT INTO tienda (ID,NOMBRE,ESTADO,CIUDAD) VALUES
 
 ![image](https://github.com/user-attachments/assets/6fac7ce0-9b53-4af0-8646-241524349381)
 
 -empleado_tienda : 20 regritros
 
+INSERT INTO empleado_tienda (ID,LEGAJO,IDTIENDA,ESTADO) Values
+
 ![image](https://github.com/user-attachments/assets/0a00b509-5825-41d4-a11c-dec174009014)
 
+ - empleado: 20 registros
+   
+ INSERT INTO empleado (ID,CUIL,APENOM,LEGAJOREAL,ESTADO) Values
+![image](https://github.com/user-attachments/assets/d43f9d22-a971-4088-9d2a-ecbdc3647e00)
+
+-tipocomprobante: 10 registros
+
+INSERT INTO TIPOCOMPROBANTE (ID, NOMBRE, ESTADO) VALUES
+![image](https://github.com/user-attachments/assets/ecb6fe84-fb55-4208-8cc1-283c0f98ec49)
 
 
+-variedades: 15 registros
+INSERT INTO VARIEDADES (ID, NOMBRE, ESTADO) VALUES
+ ![image](https://github.com/user-attachments/assets/7e2a60fa-65db-4508-9355-44a08bac52f5)
 
 
+-facturaciondet : 15 registros
+INSERT INTO FACTURACIONDET ( IDFACTURA , DESCRIPCION, IMPORTE) VALUES
+![image](https://github.com/user-attachments/assets/5bcdb498-614a-445b-8fbb-9b362e34416b)
+
+-facturacioncab: 15 registros
+INSERT INTO FACTURACIONCAB ( ID , IDTIENDA, FECHAVENTA, TIPOCOMPROBANTE, CAJA, LEGAJO, NROCOMPROBANTE,IMPORTE)
+VALUES
+![image](https://github.com/user-attachments/assets/bc292b65-b92d-4d3e-bbd2-b7bd278bc909)
+
+mediodepago: 15 registros
+
+INSERT INTO mediodepago ( IDMEDIODEPAGO , IDTIENDA, FHVENTA, TIPOCOMPROBANTE,LEGAJO, NROCOMPROBATE, VARIEDAD,IMPORTE)
+VALUES
+
+![image](https://github.com/user-attachments/assets/a86549e4-2acb-4278-8316-940dc8417726)
 
