@@ -196,7 +196,7 @@ FROM factura_completa;d ;
 ```
 ## Documentación de Funciones 
 
-## Fucion Total_diario :Esta diseñanda para calcular el total de ventas realizadas  
+### Fucion Total_diario :Esta diseñanda para calcular el total de ventas realizadas  
 
 
 Parámetros
@@ -215,7 +215,48 @@ Tipo de Retorno:
 SELECT total_diario ('2024/11/30'); 
 
 ```
-## Funcion es_medio_pago_activo :
+### Funcion es_medio_pago_activo : Determina si ua determinada variedad de mediode pago se encuentra actualmente activa en el sistema
 
 
 
+Parámetros 
+
+ - id_variedad (INT): Este parámetro representa el identificador único de la variedad de medio de pago que se desea consultar.
+ - 
+Tipo de Retorno
+
+ - BOOLEAN: La función devuelve un valor booleano. Si la variedad está activa, la función retorna TRUE; de lo contrario, retorna FALSE.
+
+
+**consulta:**
+
+
+```sql
+
+SELECT es_medio_pago_activo(12) AS 'Es Activo';
+
+```
+
+### Funcion cliente_compro_mes : determina si un cliente espesifico realizo alguna compra durante  un mes o año determinado
+
+
+Parámetros
+
+ - legajo (INT): El legajo del cliente a consultar.
+ - mes (INT): El número del mes a verificar (1-12).
+ - anio (INT): El año a verificar.
+ - 
+Tipo de Retorno
+
+BOOLEAN: La función devuelve un valor booleano (TRUE o FALSE). TRUE si el cliente realizó al menos una compra en el mes y año especificados, FALSE en caso contrario.
+
+
+
+**consulta:**
+
+
+```sql
+
+SELECT cliente_compro_mes(329854446, 11, 2024) AS 'EL CLIENTE COMPRO ESTE MES ';
+
+```
