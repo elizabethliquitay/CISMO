@@ -215,7 +215,7 @@ Tipo de Retorno:
 SELECT total_diario ('2024/11/30'); 
 
 ```
-### Funcion es_medio_pago_activo : Determina si ua determinada variedad de mediode pago se encuentra actualmente activa en el sistema
+### Funcion es_medio_pago_activo : Determina si una determinada variedad de mediode pago se encuentra actualmente activa en el sistema
 
 
 
