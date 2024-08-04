@@ -194,9 +194,9 @@ SELECT
 FROM factura_completa;d ;
 
 ```
-Documentación de Funciones
+## Documentación de Funciones 
 
-Fucion Total_diario :Esta diseñanda para calcular el total de ventas realizadas  
+## Fucion Total_diario :Esta diseñanda para calcular el total de ventas realizadas  
 
 
 Parámetros
@@ -215,6 +215,7 @@ Tipo de Retorno:
 SELECT total_diario ('2024/11/30'); 
 
 ```
+## Funcion es_medio_pago_activo :
 
 
 
