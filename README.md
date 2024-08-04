@@ -144,7 +144,8 @@ VALUES
 
 Vista:  mostrar_empleados_tiendas 
 
-Descripción: Esta vista muestra la informacion de los empleados y a que tienda trabaja
+
+**Descripción:**  Esta vista muestra la informacion de los empleados y a que tienda trabaja
 
 empleado: Contiene información general de los empleados (ID, CUIL, nombre, legajo real, estado).
 
@@ -161,7 +162,8 @@ ORDER BY 'nombre y apellido' DESC;
 
 Vista: tiendas_por_ciudad
 
-Descripcion: Esta vista muestra  las distintas ciudades que estan ubicadas CISMO y el número de tiendas que se encuentran 
+
+**Descripción:** Esta vista muestra  las distintas ciudades que estan ubicadas CISMO y el número de tiendas que se encuentran 
 
 tienda: contiene informacion de las tiendas que se encuentran en distindas provincias
 
@@ -178,7 +180,8 @@ FROM tiendas_por_ciudad ;
 
 Vista: factura_completa
 
-Descripcion:  Unifica la información de la cabecera y el detalle de cada factura, proporcionando una visión completa de cada transacción.
+
+**Descripción:**  Unifica la información de la cabecera y el detalle de cada factura, proporcionando una visión completa de cada transacción.
 
 
 facturacioncab: Contiene la información general de cada factura (fecha, tipo de comprobante, caja, legajo, etc.).
@@ -196,7 +199,10 @@ FROM factura_completa;d ;
 ```
 ## Documentación de Funciones 
 
-### Fucion Total_diario :Esta diseñanda para calcular el total de ventas realizadas  
+### Fucion Total_diario 
+
+
+**Descripción:** Esta diseñanda para calcular el total de ventas realizadas  
 
 
 Parámetros
@@ -215,7 +221,10 @@ Tipo de Retorno:
 SELECT total_diario ('2024/11/30'); 
 
 ```
-### Funcion es_medio_pago_activo : Determina si una determinada variedad de mediode pago se encuentra actualmente activa en el sistema
+### Funcion es_medio_pago_activo 
+
+
+**Descripción:** Determina si una determinada variedad de mediode pago se encuentra actualmente activa en el sistema
 
 
 
@@ -237,7 +246,10 @@ SELECT es_medio_pago_activo(12) AS 'Es Activo';
 
 ```
 
-### Funcion cliente_compro_mes : determina si un cliente espesifico realizo alguna compra durante  un mes o año determinado
+### Funcion cliente_compro_mes 
+
+
+**Descripción:** determina si un cliente espesifico realizo alguna compra durante  un mes o año determinado
 
 
 Parámetros
@@ -260,3 +272,5 @@ BOOLEAN: La función devuelve un valor booleano (TRUE o FALSE). TRUE si el clien
 SELECT cliente_compro_mes(329854446, 11, 2024) AS 'EL CLIENTE COMPRO ESTE MES ';
 
 ```
+
+## Documentación de Triggers 
