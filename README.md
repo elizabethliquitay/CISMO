@@ -274,3 +274,39 @@ SELECT cliente_compro_mes(329854446, 11, 2024) AS 'EL CLIENTE COMPRO ESTE MES ';
 ```
 
 ## Documentación de Triggers 
+
+
+
+### Triggers tr_auditoria_facturacioncab
+
+**Descripción:** Tiene como obsjetico registrar los cambios realizados en el campo 'IMPORTE' de la tabla FACTURACIONCAB
+
+**Detalles:**
+
+* **Tabla afectada:** FACTURACIONCAB
+* **Acción:** MODIFICACION
+* **Información registrada:** id_factura, importe , valor_anterior . valor_nuevo
+
+
+  **Ejemplo:**
+
+*  El tigger se activa despues que se realice una modificacion en la tabla facturacioncab
+* si se modifica el campo importe , el trigger inserta un nuevo registro en la tabla de auditoria_factutacioncab con la siguiente informaccion
+
+  - id_factura: El identificador de la factura afectada.
+  - campo_modificado: El nombre del campo que se modificó (en este caso, siempre será 'IMPORTE').
+  - valor_anterior: El valor original del campo antes de la modificación
+  - valor_nuevo: El nuevo valor del campo después de la modificación.
+  - fecha_modificacion: La fecha y hora en que se realizó la modificación.
+  - usuario: El nombre del usuario que realizó la modificación.
+
+### Triggers tr_verificar_importe_total
+
+
+**Descripción:** tiene como objetivo garantizar que el importe total de los detalles de una factura no supere el importe total de la cabecera de la factura antes de insertar un nuevo detalle.
+
+* **Tabla afectada:** FACTURACIONDET
+* **Acción:** INSERCCION
+* **Información registrada:**  importe
+
+El trigger tr_verificar_importe_total Es importante para mantener la integridad de los datos en el sistema de facturación, evitando errores y asegurando que los importes totales de las facturas sean correctos.
