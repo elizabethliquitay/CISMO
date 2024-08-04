@@ -196,4 +196,25 @@ FROM factura_completa;d ;
 ```
 Documentación de Funciones
 
+Fucion Total_diario :Esta diseñanda para calcular el total de ventas realizadas  
+
+
+Parámetros
+
+ - fecha_consulta (DATE): Este parámetro de entrada especifica la fecha para la cual se desea obtener el total de ventas.
+
+Tipo de Retorno:
+
+ - DECIMAL(14,4): La función devuelve un valor numérico de tipo decimal . Este tipo de dato representa valores monetarios con precisión.
+
+**consulta:**
+
+
+```sql
+
+SELECT total_diario ('2024/11/30'); 
+
+```
+
+
 
