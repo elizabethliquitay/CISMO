@@ -310,3 +310,12 @@ SELECT cliente_compro_mes(329854446, 11, 2024) AS 'EL CLIENTE COMPRO ESTE MES ';
 * **Información registrada:**  importe
 
 El trigger tr_verificar_importe_total Es importante para mantener la integridad de los datos en el sistema de facturación, evitando errores y asegurando que los importes totales de las facturas sean correctos.
+
+
+### Triggers tr_validar_estado_empleado
+
+**Descripción:** Queremos aegurarnos que solo los empleadps con estado 'activo' puedan realizar ventas , este triggers se ejecutara antes de intsetar un nuevo registro a la tabla facturacioncab.
+
+* **Tabla afectada:** FACTURACIONCAN
+* **Acción:** INSERCCION
+* **Información registrada:**  empleado_tienda
