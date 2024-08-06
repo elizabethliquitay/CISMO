@@ -319,3 +319,62 @@ El trigger tr_verificar_importe_total Es importante para mantener la integridad 
 * **Tabla afectada:** FACTURACIONCAN
 * **Acción:** INSERCCION
 * **Información registrada:**  empleado_tienda
+
+
+
+## Documentación de Procedimientos 
+
+### Procedimiento registar_factura
+
+**Descripción:** Registra una nueva factura de forma mas estruturada y segura, evitando errores de inserccion de datos.
+
+
+**Parámetros:**
+
+**p_detalles:** son de tipo JSON para poder manejar los detalles de la factura de forma mas flexible
+
+
+**Ejemplo de uso:**
+
+```sql
+CALL registrar_factura('0001', '2023-11-24', 'FAC', 1, 12345, 'FAC001234', 100.00, '[{"descripcion": "Producto A", "importe": 50.00}, {"descripcion": "Producto B", "importe": 50.00}]');
+```
+
+
+### Procedimiento registar_medio_pago
+
+**Descripción:** resgista un nuevo medio de pago asociado a una determinada venta o transsaccion , este proceso se encarga de validar la informacion proporcionada y de insertar los dato en la tabla correspondiente
+
+**Parámetros:**
+- p_id_tienda: Identificador único de la tienda donde se realizó la venta.
+- p_fecha_venta: Fecha en que se realizó la venta.
+- p_tipo_comprobante: Tipo de comprobante emitido (factura, ticket, etc.).
+- p_nro_comprobante: Número del comprobante.
+- p_legajo: Identificador del empleado que procesó la venta.
+- p_variedad: Identificador de la variedad de pago utilizada (efectivo, tarjeta, transferencia, etc.).
+ -p_importe: Importe total de la transacción.
+
+Si la variedad es válida, se inserta un nuevo registro en la tabla MEDIODEPAGO con los datos proporcionados en los parámetros de entrada.
+
+**Ejemplo de uso:**
+
+```sql
+CALL registrar_medio_pago('0001', '2023-11-24', 'FAC', 'FAC001234', 12345, 1, 100.00);
+```
+
+### Procedimiento registar_tienda 
+
+**Descripción:** tiene como objetivo principal registrar una nueva tienda en la base de datos, asegurando que el ID de la tienda sea único.
+
+**Parámetros:**
+
+- p_id: Identificador único de la tienda (clave primaria).
+- p_nombre: Nombre de la tienda.
+- p_estado: Estado de la tienda (activo, inactivo).
+- p_ciudad: Ciudad donde se encuentra la tienda.
+
+Si la tienda no existe, se inserta un nuevo registro en la tabla TIENDA con los valores de los parámetros de entrada, en caso contrario dispara un mensaje  '45000' SET MESSAGE_TEXT = 'La tienda ya existe'
+
+```sql
+CALL registrar_tienda('T001', 'Mi Tienda', 'A', 'Buenos Aires');
+```
