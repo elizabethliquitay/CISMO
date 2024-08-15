@@ -385,13 +385,31 @@ CALL registrar_tienda('T001', 'Mi Tienda', 'A', 'Buenos Aires');
 ### Permisos Específicos:
 
 
---------------------------------------------------------------
-|      Rol	     | Tabla	   |          Permisos               |
---------------------------------------------------------------
-| Administrador |	TIENDA	  |  SELECT, INSERT, UPDATE, DELETE |
-| Administrador	| EMPLEADO |	 SELECT, INSERT, UPDATE, DELETE |
-|   Vendedor	   | TIENDA   | 	SELECT                         |      
-|   Vendedor	   | EMPLEADO	| SELECT, INSERT, UPDATE          |
-|    Contador   |	TIENDA	  | SELECT                          |
-|    Contador	  | EMPLEADO	| SELECT                          |
---------------------------------------------------------------
+Administrador 
+
+- crear, modificar y eliminar tiendas y empleados
+- ejecutar cualquier procedimiento almecenado
+- Ver todos los datos de las tablas.
+
+Vendedor:
+
+-Consultar información de tiendas y empleados.
+-Crear nuevos empleados.
+-Modificar información de los empleados que crea.
+
+Contador:
+
+-Consultar información de tiendas y empleados.
+-Generar reportes de ventas.
+
+
+**Ejemplo de cambiar permisos permisos:**
+
+```sql
+GRANT SELECT ON proyecto_cismo.* TO 'contador'@'localhost';
+```
+
+```sql
+ INSERT INTO tienda (ID,NOMBRE,ESTADO,CIUDAD) VALUES
+ ('C021','Cismo - Catamarca','A','CATAMARCA')
+```
