@@ -382,7 +382,7 @@ CALL registrar_tienda('T001', 'Mi Tienda', 'A', 'Buenos Aires');
 ## Documentación de Usuarios y Roles
 
 
-Permisos Específicos:
+### Permisos Específicos:
 
 
 --------------------------------------------------------------
