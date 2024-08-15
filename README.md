@@ -378,3 +378,19 @@ Si la tienda no existe, se inserta un nuevo registro en la tabla TIENDA con los 
 ```sql
 CALL registrar_tienda('T001', 'Mi Tienda', 'A', 'Buenos Aires');
 ```
+
+## Documentación de Usuarios y Roles
+
+
+Permisos Específicos:
+
+--------------------------------------------------------------
+|      Rol	     | Tabla	   |          Permisos               |
+--------------------------------------------------------------
+| Administrador |	TIENDA	  |  SELECT, INSERT, UPDATE, DELETE |
+| Administrador	| EMPLEADO |	 SELECT, INSERT, UPDATE, DELETE |
+|   Vendedor	   | TIENDA   | 	SELECT                         |      
+|   Vendedor	   | EMPLEADO	| SELECT, INSERT, UPDATE          |
+|    Contador   |	TIENDA	  | SELECT                          |
+|    Contador	  | EMPLEADO	| SELECT                          |
+--------------------------------------------------------------
