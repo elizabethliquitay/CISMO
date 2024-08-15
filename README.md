@@ -393,14 +393,14 @@ Administrador
 
 Vendedor:
 
--Consultar información de tiendas y empleados.
--Crear nuevos empleados.
--Modificar información de los empleados que crea.
+ - Consultar información de tiendas y empleados.
+ - Crear nuevos empleados.
+ - Modificar información de los empleados que crea.
 
 Contador:
 
--Consultar información de tiendas y empleados.
--Generar reportes de ventas.
+ - Consultar información de tiendas y empleados.
+ - Generar reportes de ventas.
 
 
 **Ejemplo de cambiar permisos permisos:**
