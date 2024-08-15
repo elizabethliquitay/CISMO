@@ -384,6 +384,7 @@ CALL registrar_tienda('T001', 'Mi Tienda', 'A', 'Buenos Aires');
 
 Permisos Específicos:
 
+
 --------------------------------------------------------------
 |      Rol	     | Tabla	   |          Permisos               |
 --------------------------------------------------------------
