@@ -1,6 +1,6 @@
 ##  CISMO 
 
-![image](https://github.com/user-attachments/assets/63db9bfc-d135-4de7-a77e-941db839b9d0)
+https://www.canva.com/design/DAGOb4lXm4Y/L-lTTCfyA2JjhQUAlzXQ9Q/edit?utm_content=DAGOb4lXm4Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 
 
