@@ -194,7 +194,7 @@ facturaciondet: Contiene los detalles de cada ítem de una factura (descripción
 
 SELECT 
 * 
-FROM factura_completa;d ;
+FROM factura_completa;
 
 ```
 ## Documentación de Funciones 
