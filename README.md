@@ -1,6 +1,7 @@
 ##  CISMO 
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/e166e04a-8249-4491-b1b3-f359582102a0)
+
 
 
 ### Problematica:
