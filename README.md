@@ -1,8 +1,5 @@
 ##  CISMO 
 
-https://www.canva.com/design/DAGOb4lXm4Y/L-lTTCfyA2JjhQUAlzXQ9Q/edit?utm_content=DAGOb4lXm4Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
-
-
 
 
 ### Problematica:
