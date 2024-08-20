@@ -122,7 +122,16 @@ NOMBRE VARCHAR (60),
 ESTADO VARCHAR (1)
 
 );
-
+-- se crea una nueva tabla para poder validar el trigger auditoria_facturacioncab
+CREATE TABLE auditoria_facturacioncab (
+    id_auditoria INT AUTO_INCREMENT PRIMARY KEY,
+    id_factura INT NOT NULL,
+    campo_modificado VARCHAR(50) NOT NULL,
+    valor_anterior DECIMAL(14,4),
+    valor_nuevo DECIMAL(14,4),
+    fecha_modificacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    usuario VARCHAR(50) NOT NULL
+);
 -- FACTURACION CABECERA
 
 ALTER TABLE FACTURACIONCAB
