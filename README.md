@@ -406,7 +406,7 @@ Contador:
  - Generar reportes de ventas.
 
 
-**Ejemplo de cambiar permisos permisos:**
+**Ejemplo de cambiar permisos :**
 
 ```sql
 GRANT SELECT ON proyecto_cismo.* TO 'contador'@'localhost';
