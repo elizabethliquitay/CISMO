@@ -416,3 +416,13 @@ GRANT SELECT ON proyecto_cismo.* TO 'contador'@'localhost';
  INSERT INTO tienda (ID,NOMBRE,ESTADO,CIUDAD) VALUES
  ('C021','Cismo - Catamarca','A','CATAMARCA')
 ```
+
+
+
+## Back up de la base de datos
+  Se creo un backup de cismo mediante un dump llamado Dump2024.sql
+
+- Restauración: Si se produce algún problema  en la base de datos de cismo (falla del servidor, eliminación accidental de datos, etc.), puedes restaurar estado anterior utilizando el dump.
+- Migración:  la base de datos de cismo se puede mover  a otro servidor o cambiar su estructura sin perder datos.
+- Desarrollo: Los dumps son útiles para crear entornos de desarrollo o pruebas a partir de una base de datos de producción.
+  
